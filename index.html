@@ -3,332 +3,455 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aconchego Felino — Cat Sitter no Lar</title>
-    <!-- Fonte Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
+    <title>Roteiro & Comprinhas - Coreia do Sul</title>
     <style>
         :root {
-            --primary: #7C5CBF;
-            --primary-hover: #6444A5;
-            --secondary: #FAF6F0;
-            --accent: #EBB071;
-            --text-dark: #2D2B32;
-            --text-light: #6E6B7B;
-            --white: #FFFFFF;
-            --radius: 16px;
+            --primary: #FF477E;
+            --bg: #F8F9FA;
+            --card-bg: #FFFFFF;
+            --text-main: #2B2D42;
+            --text-muted: #6C757D;
         }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Plus Jakarta Sans', sans-serif;
-        }
-
         body {
-            background-color: var(--secondary);
-            color: var(--text-dark);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg);
+            color: var(--text-main);
+            margin: 0;
+            padding: 15px;
             line-height: 1.6;
         }
-
-        /* Container centralizado */
-        .container {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        /* Header e Nav */
-        header {
-            background: var(--white);
-            padding: 20px 0;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.03);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-size: 1.4rem;
-            font-weight: 700;
+        h1 {
+            text-align: center;
             color: var(--primary);
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            gap: 8px;
+            font-size: 1.6rem;
+            margin-bottom: 5px;
         }
-
-        .nav-links {
-            display: flex;
-            gap: 24px;
-            list-style: none;
-        }
-
-        .nav-links a {
-            text-decoration: none;
-            color: var(--text-dark);
-            font-weight: 500;
-            transition: color 0.2s;
-        }
-
-        .nav-links a:hover {
-            color: var(--primary);
-        }
-
-        /* Hero Section */
-        .hero {
-            padding: 80px 0 60px;
+        .intro {
             text-align: center;
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            margin-bottom: 30px;
         }
-
-        .hero h1 {
-            font-size: 2.8rem;
-            line-height: 1.2;
-            color: var(--text-dark);
-            margin-bottom: 20px;
+        .date-block {
+            background-color: #2B2D42;
+            color: white;
+            padding: 15px;
+            border-radius: 12px;
+            margin-top: 35px;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
-
-        .hero p {
-            font-size: 1.2rem;
-            color: var(--text-light);
-            max-width: 650px;
-            margin: 0 auto 32px;
+        .date-block h2 {
+            margin: 0 0 5px 0;
+            font-size: 1.25rem;
+            color: #FFD166;
         }
-
-        .btn-main {
-            display: inline-block;
-            background-color: var(--primary);
-            color: var(--white);
-            padding: 16px 36px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 1.1rem;
-            box-shadow: 0 4px 14px rgba(124, 92, 191, 0.3);
-            transition: background 0.3s, transform 0.2s;
-        }
-
-        .btn-main:hover {
-            background-color: var(--primary-hover);
-            transform: translateY(-2px);
-        }
-
-        /* Cards / Seções */
-        .section {
-            padding: 60px 0;
-        }
-
-        .section-title {
-            text-align: center;
-            font-size: 2rem;
-            margin-bottom: 40px;
-        }
-
-        .grid-3 {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 24px;
-        }
-
-        .card {
-            background: var(--white);
-            padding: 32px;
-            border-radius: var(--radius);
-            box-shadow: 0 4px 20px rgba(0,0,0,0.04);
-            transition: transform 0.2s;
-        }
-
-        .card:hover {
-            transform: translateY(-4px);
-        }
-
-        .card-icon {
-            font-size: 2.5rem;
-            margin-bottom: 16px;
-        }
-
-        .card h3 {
-            margin-bottom: 12px;
-            font-size: 1.3rem;
-        }
-
-        .card p {
-            color: var(--text-light);
-            font-size: 0.98rem;
-        }
-
-        /* Diferenciais List */
-        .features-list {
-            list-style: none;
-            padding: 0;
-        }
-
-        .features-list li {
-            padding: 12px 0;
-            border-bottom: 1px solid #EFECE6;
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            color: var(--text-dark);
-        }
-
-        /* Região e Contato */
-        .box-info {
-            background: #EFE9FA;
-            border-radius: var(--radius);
-            padding: 40px;
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        /* Botão Flutuante do WhatsApp */
-        .whatsapp-float {
-            position: fixed;
-            width: 60px;
-            height: 60px;
-            bottom: 30px;
-            right: 30px;
-            background-color: #25d366;
-            color: #FFF;
-            border-radius: 50px;
-            text-align: center;
-            font-size: 30px;
-            box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
-            z-index: 1000;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-decoration: none;
-            transition: transform 0.2s;
-        }
-
-        .whatsapp-float:hover {
-            transform: scale(1.1);
-        }
-
-        /* Rodapé */
-        footer {
-            background: var(--white);
-            padding: 30px 0;
-            text-align: center;
-            color: var(--text-light);
+        .date-block p {
+            margin: 0;
             font-size: 0.9rem;
-            margin-top: 60px;
-            border-top: 1px solid #EFECE6;
+            opacity: 0.9;
         }
-
-        /* Responsividade para Celulares */
-        @media (max-width: 768px) {
-            .hero h1 { font-size: 2.1rem; }
-            .nav-links { display: none; } /* Oculta menu longo no mobile para simplicidade */
+        .chat-bubble {
+            background-color: #E2ECE9;
+            padding: 12px 15px;
+            border-radius: 0 12px 12px 12px;
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+            border-left: 4px solid #06D6A0;
+        }
+        .store-header {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: var(--primary);
+            margin-bottom: 10px;
+            margin-top: 25px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .store-facade {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border: 1px solid #ddd;
+        }
+        .btn-action {
+            display: inline-block;
+            background-color: #4285F4;
+            color: white;
+            padding: 6px 12px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 4px rgba(66, 133, 244, 0.3);
+        }
+        .btn-photo {
+            background-color: #2B2D42;
+            margin-top: 5px;
+        }
+        .card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 15px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+        }
+        .card-top {
+            display: flex;
+            gap: 15px;
+            align-items: flex-start;
+        }
+        .product-img {
+            width: 90px;
+            height: 90px;
+            object-fit: contain;
+            border-radius: 8px;
+            border: 1px solid #eee;
+            flex-shrink: 0;
+            background-color: #ffffff;
+            padding: 2px;
+        }
+        .product-details {
+            flex-grow: 1;
+        }
+        .product-details h3 {
+            margin: 0 0 5px 0;
+            font-size: 0.95rem;
+            color: #333;
+        }
+        .product-details p {
+            margin: 0 0 8px 0;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+        .tech-info {
+            background-color: #FFF3CD;
+            border: 1px solid #FFEEBA;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+            font-size: 0.9rem;
+            color: #856404;
+        }
+        .alert-box {
+            background-color: #e3f2fd;
+            border-left: 4px solid #0d6efd;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            font-size: 0.9rem;
+            color: #084298;
+        }
+        .multi-img-container {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            overflow-x: auto;
+            padding-bottom: 5px;
+        }
+        .multi-img-container img {
+            width: 75px;
+            height: 75px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+        }
+        .location-mini {
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid #cce5ff;
+        }
+        .location-mini strong {
+            display: block;
+            margin-bottom: 5px;
+            color: #084298;
+        }
+        .korean-card {
+            background-color: #f1f8ff;
+            border: 2px dashed #4285F4;
+            padding: 12px;
+            border-radius: 8px;
+            margin-top: 15px;
+            text-align: center;
+        }
+        .korean-label {
+            display: block;
+            font-size: 0.8rem;
+            color: #084298;
+            font-weight: bold;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+        .korean-text {
+            display: block;
+            font-size: 1.15rem;
+            font-weight: bold;
+            color: #000000;
+            margin-bottom: 4px;
+        }
+        .korean-translation {
+            display: block;
+            font-size: 0.75rem;
+            color: #6C757D;
         }
     </style>
 </head>
 <body>
 
-    <!-- Cabeçalho -->
-    <header>
-        <div class="container">
-            <nav>
-                <a href="#" class="logo">🐾 Aconchego Felino</a>
-                <ul class="nav-links">
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#servicos">Serviços</a></li>
-                    <li><a href="#diferenciais">Diferenciais</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <h1>🛍️ Roteiro de Comprinhas</h1>
+    <div class="intro">Muito obrigada por me ajudarem! Para não pesar na viagem de vocês, organizei os meus pedidos exatamente pelas cidades, lojas físicas e datas do roteiro. Coloquei até as fotos das lojas e um texto em coreano pra vocês mostrarem para as vendedoras!</div>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <h1>Cuidado e carinho para o seu gatinho no conforto do próprio lar</h1>
-            <p>Atendimento exclusivo e especializado para felinos. Sem estresse de transporte ou mudanças de rotina enquanto você viaja.</p>
-            <a href="https://wa.me/5500000000000?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20serviço%20de%20Cat%20Sitter." class="btn-main" target="_blank">Agendar Visita no WhatsApp</a>
-        </div>
-    </section>
 
-    <!-- Serviços -->
-    <section class="section" id="servicos">
-        <div class="container">
-            <h2 class="section-title">O que inclui em cada visita</h2>
-            <div class="grid-3">
-                <div class="card">
-                    <div class="card-icon">🥣</div>
-                    <h3>Alimentação & Hidratação</h3>
-                    <p>Servimento de ração seca, sachê/úmidos e troca de água fresca em todos os potinhos e fontes.</p>
-                </div>
-                <div class="card">
-                    <div class="card-icon">🧹</div>
-                    <h3>Higienização Geral</h3>
-                    <p>Limpeza diária das caixas de areia, recolhimento de detritos e varrições leves ao redor da área sanitária.</p>
-                </div>
-                <div class="card">
-                    <div class="card-icon">🎾</div>
-                    <h3>Carinho & Brincadeiras</h3>
-                    <p>Enriquecimento ambiental, escovação e muita atenção respeitando sempre o ritmo e temperamento do seu gato.</p>
-                </div>
+    <!-- ================= BLOCO 1: SEUL (PRIMEIRA PARTE) ================= -->
+    <div class="date-block">
+        <h2>🗓️ 15 a 18 de Out. — SEUL</h2>
+        <p>📍 Hospedagem: Travelodge Myeongdong Euljiro</p>
+    </div>
+
+    <div class="chat-bubble">
+        <strong>Já que de 15 a 18 de outubro vocês estarão em Seul</strong>, logo no bairro de Myeongdong, esse é o melhor momento para comprar os cosméticos e os itens de K-Pop! Tem uma Olive Young gigante bem perto do hotel de vocês.
+    </div>
+
+    <div class="store-header">📍 Olive Young (Flagship Store)</div>
+    <!-- Fachada da loja para elas reconhecerem -->
+    <img class="store-facade" src="https://tse1.mm.bing.net/th?q=Olive+Young+Myeongdong+Flagship+Store+exterior+facade" alt="Fachada Olive Young">
+    <a href="https://www.google.com/maps/search/?api=1&query=Olive+Young+Myeongdong+Flagship" target="_blank" class="btn-action">🗺️ Abrir no Google Maps</a>
+
+    <div class="tech-info">
+        <strong>🤖 Dica de Ouro (De Graça!): Análise de Pele Mark-Vu</strong><br>
+        Meninas, nessa Olive Young Flagship (ou na IOPE Lab na mesma rua), eles têm o <strong>Mark-Vu</strong>, uma inteligência artificial que fotografa o rosto sob luzes UV e mostra manchas ocultas, hidratação e idade real da pele. <strong>É totalmente gratuito</strong> como cortesia da loja! Não precisa pagar nada, só pedir para usar. Aproveitem!
+    </div>
+
+    <div class="card">
+        <div class="card-top">
+            <img class="product-img" src="https://tse1.mm.bing.net/th?q=Celimax+Pore+Dark+Spot+Brightening+Cream+35ml+skincare" alt="Celimax Pore Dark Spot">
+            <div class="product-details">
+                <h3>Celimax Pore + Dark Spot Brightening Cream</h3>
+                <p>Creme clareador para manchas. É uma bisnaga branca com uma faixa amarela.</p>
+                <a href="https://www.google.com/search?tbm=isch&q=Celimax+Pore+Dark+Spot+Brightening+Cream+35ml+embalagem" target="_blank" class="btn-action btn-photo">📸 Ver Foto Maior</a>
             </div>
         </div>
-    </section>
+        <div class="korean-card">
+            <span class="korean-label">🇰🇷 Mostre para a vendedora:</span>
+            <span class="korean-text">안녕하세요! 사진 속 이 제품을 찾고 있어요. 재고가 있나요?</span>
+            <span class="korean-translation">(Olá! Estou procurando este produto da foto. Tem no estoque?)</span>
+        </div>
+    </div>
 
-    <!-- Diferenciais -->
-    <section class="section" id="diferenciais">
-        <div class="container">
-            <h2 class="section-title">Por que escolher o Cat Sitting no lar?</h2>
-            <div class="grid-3">
-                <div class="card">
-                    <h3>Diferenciais do Atendimento</h3>
-                    <ul class="features-list">
-                        <li>📸 <strong>Fotos e Vídeos:</strong> Relatórios detalhados enviando notícias a cada visita.</li>
-                        <li>💊 <strong>Medicação:</strong> Administração de medicação oral ou tópica mediante receita.</li>
-                        <li>🌿 <strong>Segurança:</strong> Cuidados com plantas, portas, janelas e rotinas da casa.</li>
-                        <li>🩺 <strong>Experiência Felina:</strong> Foco exclusivo no bem-estar e linguagem corporal dos gatos.</li>
-                    </ul>
-                </div>
-                <div class="card" id="sobre">
-                    <h3>Como funciona o agendamento?</h3>
-                    <p>1. <strong>Contato Inicial:</strong> Você me envia as datas da viagem e localização.<br><br>
-                       2. <strong>Visita Presencial Gratuita:</strong> Alinhamos os detalhes, rotina do gato e entrega das chaves.<br><br>
-                       3. <strong>Período de Atendimento:</strong> Cuido de tudo com dedicação enquanto você viaja tranquilo(a).</p>
-                </div>
+    <div class="card">
+        <div class="card-top">
+            <img class="product-img" src="https://tse1.mm.bing.net/th?q=Rejuran+Healer+Dual+Effect+Ampoule+30ml" alt="Rejuran Dual Effect">
+            <div class="product-details">
+                <h3>Rejuran Dual Effect Ampoule (com c-PDRN)</h3>
+                <p>Sérum antienvelhecimento famoso. O frasco é um potinho dourado.</p>
+                <a href="https://www.google.com/search?tbm=isch&q=Rejuran+Healer+Dual+Effect+Ampoule+gold+packaging" target="_blank" class="btn-action btn-photo">📸 Ver Foto Maior</a>
             </div>
         </div>
-    </section>
+        <div class="korean-card">
+            <span class="korean-label">🇰🇷 Mostre para a vendedora:</span>
+            <span class="korean-text">안녕하세요! 사진 속 이 제품을 찾고 있어요. 재고가 있나요?</span>
+            <span class="korean-translation">(Olá! Estou procurando este produto da foto. Tem no estoque?)</span>
+        </div>
+    </div>
 
-    <!-- Região e Contato -->
-    <section class="section" id="contato">
-        <div class="container">
-            <div class="box-info">
-                <h2>Locais de Atendimento</h2>
-                <p style="margin: 12px 0 24px; color: var(--text-light);">Atendimento presencial em bairros de <strong>Jundiaí e região</strong>.</p>
-                <a href="https://wa.me/5500000000000?text=Olá!%20Gostaria%20de%20consultar%20disponibilidade%20para%20o%20meu%20bairro." class="btn-main" target="_blank">Consultar Disponibilidade de Data</a>
+    <div class="card">
+        <div class="card-top">
+            <img class="product-img" src="https://tse1.mm.bing.net/th?q=Anua+Rice+70+Glow+Milky+Toner+250ml" alt="Anua Rice Toner">
+            <div class="product-details">
+                <h3>Anua Rice 70 Glow Milky Toner</h3>
+                <p>Tônico leitoso de arroz. Frasco branco translúcido e minimalista.</p>
+                <a href="https://www.google.com/search?tbm=isch&q=Anua+Rice+70+Glow+Milky+Toner+bottle" target="_blank" class="btn-action btn-photo">📸 Ver Foto Maior</a>
             </div>
         </div>
-    </section>
-
-    <!-- Botão Flutuante do WhatsApp (Ícone SVG) -->
-    <a href="https://wa.me/5500000000000?text=Olá!%20Gostaria%20de%20informações%20sobre%20o%20Cat%20Sitter." class="whatsapp-float" target="_blank" aria-label="Contato via WhatsApp">
-        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="fill: white; stroke: white;"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
-    </a>
-
-    <!-- Rodapé -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 Aconchego Felino — Cat Sitting no Lar. Todos os direitos reservados.</p>
+        <div class="korean-card">
+            <span class="korean-label">🇰🇷 Mostre para a vendedora:</span>
+            <span class="korean-text">안녕하세요! 사진 속 이 제품을 찾고 있어요. 재고가 있나요?</span>
+            <span class="korean-translation">(Olá! Estou procurando este produto da foto. Tem no estoque?)</span>
         </div>
-    </footer>
+    </div>
+
+
+    <div class="store-header">📍 Lojas de K-Pop (Myeongdong)</div>
+    <a href="https://www.google.com/maps/search/?api=1&query=Myeongdong+Underground+Shopping+Center" target="_blank" class="btn-action">🗺️ Abrir no Google Maps</a>
+
+    <div class="card">
+        <div class="card-top">
+            <img class="product-img" src="https://tse1.mm.bing.net/th?q=SKZOO+plush+original+stray+kids" alt="SKZOO Stray Kids">
+            <div class="product-details">
+                <h3>Fã de Stray Kids (SKZ)</h3>
+                <p>Se acharem pelúcias oficiais (os bichinhos SKZOO) ou o Lightstick deles</p>
+            </div>
+        </div>
+        <div class="korean-card">
+            <span class="korean-label">🇰🇷 Mostre para o vendedor:</span>
+            <span class="korean-text">스트레이 키즈(Stray Kids) 공식 굿즈나 스키주(SKZOO) 인형 있나요?</span>
+            <span class="korean-translation">(Vocês têm produtos oficiais do Stray Kids ou pelúcias do SKZOO?)</span>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-top">
+            <img class="product-img" src="https://tse1.mm.bing.net/th?q=Blackpink+Krunk+keyring+official" alt="BLACKPINK Merch">
+            <div class="product-details">
+                <h3>Algo Fofo do BLACKPINK</h3>
+                <p>Qualquer chaveirinho do mini-lightstick ou do ursinho mascote KRUNK da YG. Bem fofinho!</p>
+            </div>
+        </div>
+        <div class="korean-card">
+            <span class="korean-label">🇰🇷 Mostre para o vendedor:</span>
+            <span class="korean-text">블랙핑크(BLACKPINK) 공식 귀여운 굿즈나 키링 있나요?</span>
+            <span class="korean-translation">(Vocês têm produtos oficiais fofos ou chaveiros do BLACKPINK?)</span>
+        </div>
+    </div>
+
+
+    <!-- ================= BLOCO 2: JEJU E BUSAN ================= -->
+    <div class="date-block" style="background-color: #118AB2;">
+        <h2>🗓️ 18 a 24 de Out. — JEJU & BUSAN</h2>
+        <p>📍 Hospedagem: RegentMarine (Jeju) e Toyoko Inn (Busan)</p>
+    </div>
+
+    <div class="chat-bubble" style="border-left-color: #118AB2; background-color: #E3F2FD;">
+        <strong>Já que de 18 a 24 de outubro vocês vão estar curtindo as paisagens de Jeju e Busan</strong>, deixei a busca de capinhas para cá!
+    </div>
+
+    <div class="alert-box">
+        <strong>💡 DICA: Máscara Wellderma em Busan e Jeju</strong><br>
+        Eu deixei a Máscara Wellderma pro final do roteiro pra não pesar a mala de vocês, mas caso vocês visitem o <strong>Shinsegae Centum City em Busan</strong> (maior shopping do mundo, fica do lado do hotel de vocês em Haeundae) ou o <strong>Shilla Duty Free em Jeju</strong>, a máscara vende fisicamente lá dentro! Se quiserem já comprar e se livrar da tarefa, fiquem à vontade!
+
+        <!-- Sub-bloco Busan -->
+        <div class="location-mini">
+            <strong>📍 Busan: Shinsegae Centum City</strong>
+            <img class="store-facade" style="height: 110px;" src="https://tse1.mm.bing.net/th?q=Shinsegae+Centum+City+Busan+exterior+building" alt="Shinsegae Centum City Busan">
+            <a href="https://www.google.com/maps/search/?api=1&query=Shinsegae+Centum+City+Busan" target="_blank" class="btn-action" style="margin-bottom: 0;">🗺️ Maps: Shinsegae Busan</a>
+        </div>
+
+        <div class="card">
+        <div class="card-top">
+            <img class="product-img" src="https://tse1.mm.bing.net/th?q=Wellderma+LED+Mask+device+korea" alt="Wellderma LED Mask">
+            <div class="product-details">
+                <h3>Wellderma LED Mask</h3>
+                <p>Aparelho facial de terapia de luz. Vende fisicamente no <strong>Lotte Duty Free</strong> (ao lado do hotel de vocês) ou no Duty Free do Aeroporto de Incheon.</p>
+                <p style="font-size: 0.8rem; color: #d63384; font-weight: bold;">Fiz um mini-álbum abaixo pra vocês verem a caixa e o aparelho em detalhes!</p>
+            </div>
+        </div>
+        
+        <!-- Galeria de Fotos Extras da Máscara -->
+        <div class="multi-img-container">
+            <img src="https://tse1.mm.bing.net/th?q=Wellderma+Sapphire+Low+Frequency+LED+Mask+box" alt="Caixa Wellderma">
+            <img src="https://tse1.mm.bing.net/th?q=Wellderma+LED+Mask+front+view" alt="Máscara de frente">
+            <img src="https://tse1.mm.bing.net/th?q=Wellderma+LED+mask+light+therapy" alt="Máscara acessa">
+        </div>
+
+        <div class="korean-card">
+            <span class="korean-label">🇰🇷 Mostre para a vendedora:</span>
+            <span class="korean-text">안녕하세요! 웰더마(Wellderma) LED 마스크를 찾고 있어요. 재고가 있나요?</span>
+            <span class="korean-translation">(Olá! Estou procurando a Máscara LED da Wellderma. Tem no estoque?)</span>
+        </div>
+    </div>
+
+        <!-- Sub-bloco Jeju -->
+        <div class="location-mini">
+            <strong>📍 Jeju: Shilla Duty Free</strong>
+            <img class="store-facade" style="height: 110px;" src="https://tse1.mm.bing.net/th?q=Shilla+Duty+Free+Jeju+exterior" alt="Shilla Duty Free Jeju">
+            <a href="https://www.google.com/maps/search/?api=1&query=Shilla+Duty+Free+Jeju" target="_blank" class="btn-action" style="margin-bottom: 0;">🗺️ Maps: Shilla Duty Free Jeju</a>
+        </div>
+
+        <div class="card">
+        <div class="card-top">
+            <img class="product-img" src="https://tse1.mm.bing.net/th?q=Wellderma+LED+Mask+device+korea" alt="Wellderma LED Mask">
+            <div class="product-details">
+                <h3>Wellderma LED Mask</h3>
+                <p>Aparelho facial de terapia de luz. Vende fisicamente no <strong>Lotte Duty Free</strong> (ao lado do hotel de vocês) ou no Duty Free do Aeroporto de Incheon.</p>
+                <p style="font-size: 0.8rem; color: #d63384; font-weight: bold;">Fiz um mini-álbum abaixo pra vocês verem a caixa e o aparelho em detalhes!</p>
+            </div>
+        </div>
+        
+        <!-- Galeria de Fotos Extras da Máscara -->
+        <div class="multi-img-container">
+            <img src="https://tse1.mm.bing.net/th?q=Wellderma+Sapphire+Low+Frequency+LED+Mask+box" alt="Caixa Wellderma">
+            <img src="https://tse1.mm.bing.net/th?q=Wellderma+LED+Mask+front+view" alt="Máscara de frente">
+            <img src="https://tse1.mm.bing.net/th?q=Wellderma+LED+mask+light+therapy" alt="Máscara acessa">
+        </div>
+
+        <div class="korean-card">
+            <span class="korean-label">🇰🇷 Mostre para a vendedora:</span>
+            <span class="korean-text">안녕하세요! 웰더마(Wellderma) LED 마스크를 찾고 있어요. 재고가 있나요?</span>
+            <span class="korean-translation">(Olá! Estou procurando a Máscara LED da Wellderma. Tem no estoque?)</span>
+        </div>
+    </div>
+    </div>
+
+    <div class="card">
+        <div class="card-top">
+            <img class="product-img" src="https://tse1.mm.bing.net/th?q=cute+korean+samsung+galaxy+phone+case+character" alt="Capinhas Samsung">
+            <div class="product-details">
+                <h3>Capinhas de Celular (Samsung)</h3>
+                <p>A Coreia é a terra da Samsung! Se acharem capinhas maravilhosas, diferentes e fofas o celular!</p>
+            </div>
+        </div>
+        <div class="korean-card">
+            <span class="korean-label">🇰🇷 Mostre para o vendedor:</span>
+            <span class="korean-text">제 핸드폰 기종에 맞는 귀여운 케이스가 있나요?</span>
+            <span class="korean-translation">(Vocês têm capinhas fofas que sirvam no modelo do meu celular?)</span>
+        </div>
+    </div>
+
+
+    <!-- ================= BLOCO 3: RETORNO A SEUL ================= -->
+    <div class="date-block" style="background-color: #EF476F;">
+        <h2>🗓️ 24 a 30 de Out. — RETORNO A SEUL</h2>
+        <p>📍 Hospedagem: Travelodge Myeongdong Euljiro</p>
+    </div>
+
+    <div class="chat-bubble" style="border-left-color: #EF476F; background-color: #FFEBEE;">
+        <strong>Já que de 24 a 30 de outubro vocês estarão de volta a Seul para os últimos dias</strong>, aqui é o momento perfeito para comprar o aparelho de pele fisicamente, caso não tenham comprado em Busan ou Jeju. Assim vocês vão direto pro aeroporto sem ter carregado a caixa na viagem inteira.
+    </div>
+
+    <div class="store-header">📍 Lotte Duty Free (Myeongdong)</div>
+    <!-- Fachada do Lotte -->
+    <img class="store-facade" src="https://tse1.mm.bing.net/th?q=Lotte+Department+Store+Myeongdong+exterior+street+view" alt="Fachada Lotte Duty Free">
+    <a href="https://www.google.com/maps/search/?api=1&query=Lotte+Duty+Free+Myeongdong+Main+Store" target="_blank" class="btn-action">🗺️ Abrir Lotte Duty Free no Maps</a>
+
+    <div class="card">
+        <div class="card-top">
+            <img class="product-img" src="https://tse1.mm.bing.net/th?q=Wellderma+LED+Mask+device+korea" alt="Wellderma LED Mask">
+            <div class="product-details">
+                <h3>Wellderma LED Mask</h3>
+                <p>Aparelho facial de terapia de luz. Vende fisicamente no <strong>Lotte Duty Free</strong> (ao lado do hotel de vocês) ou no Duty Free do Aeroporto de Incheon.</p>
+                <p style="font-size: 0.8rem; color: #d63384; font-weight: bold;">Fiz um mini-álbum abaixo pra vocês verem a caixa e o aparelho em detalhes!</p>
+            </div>
+        </div>
+        
+        <!-- Galeria de Fotos Extras da Máscara -->
+        <div class="multi-img-container">
+            <img src="https://tse1.mm.bing.net/th?q=Wellderma+Sapphire+Low+Frequency+LED+Mask+box" alt="Caixa Wellderma">
+            <img src="https://tse1.mm.bing.net/th?q=Wellderma+LED+Mask+front+view" alt="Máscara de frente">
+            <img src="https://tse1.mm.bing.net/th?q=Wellderma+LED+mask+light+therapy" alt="Máscara acessa">
+        </div>
+
+        <div class="korean-card">
+            <span class="korean-label">🇰🇷 Mostre para a vendedora:</span>
+            <span class="korean-text">안녕하세요! 웰더마(Wellderma) LED 마스크를 찾고 있어요. 재고가 있나요?</span>
+            <span class="korean-translation">(Olá! Estou procurando a Máscara LED da Wellderma. Tem no estoque?)</span>
+        </div>
+    </div>
+    
+    </div>
+
+    <div class="intro" style="margin-top: 40px; margin-bottom: 40px; font-weight: bold;">
+        ✈️ Divirtam-se muito e comam bastante churrasco coreano por mim! Obrigada, meninas! 💖
+    </div>
 
 </body>
 </html>
