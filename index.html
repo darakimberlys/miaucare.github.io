@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,6 +13,7 @@
             --text-main: #2B2D42;
             --text-muted: #6C757D;
         }
+
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
             background-color: var(--bg);
@@ -20,18 +22,21 @@
             padding: 15px;
             line-height: 1.6;
         }
+
         h1 {
             text-align: center;
             color: var(--primary);
             font-size: 1.6rem;
             margin-bottom: 5px;
         }
+
         .intro {
             text-align: center;
             font-size: 0.95rem;
             color: var(--text-muted);
             margin-bottom: 30px;
         }
+
         .date-block {
             background-color: #2B2D42;
             color: white;
@@ -39,18 +44,21 @@
             border-radius: 12px;
             margin-top: 35px;
             margin-bottom: 15px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
+
         .date-block h2 {
             margin: 0 0 5px 0;
             font-size: 1.25rem;
             color: #FFD166;
         }
+
         .date-block p {
             margin: 0;
             font-size: 0.9rem;
             opacity: 0.9;
         }
+
         .chat-bubble {
             background-color: #E2ECE9;
             padding: 12px 15px;
@@ -59,6 +67,7 @@
             font-size: 0.95rem;
             border-left: 4px solid #06D6A0;
         }
+
         .store-header {
             font-size: 1.1rem;
             font-weight: bold;
@@ -69,15 +78,17 @@
             align-items: center;
             gap: 5px;
         }
+
         .store-facade {
             width: 100%;
             height: 160px;
             object-fit: cover;
             border-radius: 12px;
             margin-bottom: 10px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             border: 1px solid #ddd;
         }
+
         .btn-action {
             display: inline-block;
             background-color: #4285F4;
@@ -90,24 +101,28 @@
             margin-bottom: 15px;
             box-shadow: 0 2px 4px rgba(66, 133, 244, 0.3);
         }
+
         .btn-photo {
             background-color: #2B2D42;
             margin-top: 5px;
         }
+
         .card {
             background: var(--card-bg);
             border-radius: 12px;
             padding: 15px;
             margin-bottom: 15px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
             display: flex;
             flex-direction: column;
         }
+
         .card-top {
             display: flex;
             gap: 15px;
             align-items: flex-start;
         }
+
         .product-img {
             width: 90px;
             height: 90px;
@@ -118,19 +133,23 @@
             background-color: #ffffff;
             padding: 2px;
         }
+
         .product-details {
             flex-grow: 1;
         }
+
         .product-details h3 {
             margin: 0 0 5px 0;
             font-size: 0.95rem;
             color: #333;
         }
+
         .product-details p {
             margin: 0 0 8px 0;
             font-size: 0.85rem;
             color: var(--text-muted);
         }
+
         .tech-info {
             background-color: #FFF3CD;
             border: 1px solid #FFEEBA;
@@ -140,6 +159,18 @@
             font-size: 0.9rem;
             color: #856404;
         }
+
+        .tax-info {
+            background-color: #D1E7DD;
+            border: 1px solid #BADBCC;
+            border-left: 4px solid #198754;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+            font-size: 0.9rem;
+            color: #0F5132;
+        }
+
         .alert-box {
             background-color: #e3f2fd;
             border-left: 4px solid #0d6efd;
@@ -149,6 +180,7 @@
             font-size: 0.9rem;
             color: #084298;
         }
+
         .multi-img-container {
             display: flex;
             gap: 10px;
@@ -157,6 +189,7 @@
             overflow-x: auto;
             padding-bottom: 5px;
         }
+
         .multi-img-container img {
             width: 75px;
             height: 75px;
@@ -164,6 +197,7 @@
             border-radius: 8px;
             border: 1px solid #ddd;
         }
+
         .location-mini {
             background: #ffffff;
             border-radius: 8px;
@@ -171,11 +205,13 @@
             margin-top: 10px;
             border: 1px solid #cce5ff;
         }
+
         .location-mini strong {
             display: block;
             margin-bottom: 5px;
             color: #084298;
         }
+
         .korean-card {
             background-color: #f1f8ff;
             border: 2px dashed #4285F4;
@@ -184,6 +220,7 @@
             margin-top: 15px;
             text-align: center;
         }
+
         .korean-label {
             display: block;
             font-size: 0.8rem;
@@ -192,6 +229,7 @@
             margin-bottom: 5px;
             text-transform: uppercase;
         }
+
         .korean-text {
             display: block;
             font-size: 1.15rem;
@@ -199,6 +237,7 @@
             color: #000000;
             margin-bottom: 4px;
         }
+
         .korean-translation {
             display: block;
             font-size: 0.75rem;
@@ -206,10 +245,13 @@
         }
     </style>
 </head>
+
 <body>
 
     <h1>🛍️ Roteiro de Comprinhas</h1>
-    <div class="intro">Muito obrigada por me ajudarem! Para não pesar na viagem de vocês, organizei os meus pedidos exatamente pelas cidades, lojas físicas e datas do roteiro. Coloquei até as fotos das lojas e um texto em coreano pra vocês mostrarem para as vendedoras!</div>
+    <div class="intro">Muito obrigada por me ajudarem! Para não pesar na viagem de vocês, organizei os meus pedidos
+        exatamente pelas cidades, lojas físicas e datas do roteiro. Coloquei até as fotos das lojas e um texto em
+        coreano pra vocês mostrarem para as vendedoras!</div>
 
 
     <!-- ================= BLOCO 1: SEUL (PRIMEIRA PARTE) ================= -->
@@ -219,26 +261,44 @@
     </div>
 
     <div class="chat-bubble">
-        <strong>Já que de 15 a 18 de outubro vocês estarão em Seul</strong>, logo no bairro de Myeongdong, esse é o melhor momento para comprar os cosméticos e os itens de K-Pop! Tem uma Olive Young gigante bem perto do hotel de vocês.
+        <strong>Já que de 15 a 18 de outubro vocês estarão em Seul</strong>, logo no bairro de Myeongdong, esse é o
+        melhor momento para comprar os cosméticos e os itens de K-Pop! Tem uma Olive Young gigante bem perto do hotel de
+        vocês.
     </div>
 
     <div class="store-header">📍 Olive Young (Flagship Store)</div>
     <!-- Fachada da loja para elas reconhecerem -->
-    <img class="store-facade" src="https://tse1.mm.bing.net/th?q=Olive+Young+Myeongdong+Flagship+Store+exterior+facade" alt="Fachada Olive Young">
-    <a href="https://www.google.com/maps/search/?api=1&query=Olive+Young+Myeongdong+Flagship" target="_blank" class="btn-action">🗺️ Abrir no Google Maps</a>
+    <img class="store-facade" src="https://tse1.mm.bing.net/th?q=Olive+Young+Myeongdong+Flagship+Store+exterior+facade"
+        alt="Fachada Olive Young">
+    <a href="https://www.google.com/maps/search/?api=1&query=Olive+Young+Myeongdong+Flagship" target="_blank"
+        class="btn-action">🗺️ Abrir no Google Maps</a>
+
+    <div class="tax-info">
+        <strong>🛂 DICA DE OURO PARA O MEU BOLSO: Tax Refund!</strong><br>
+        Meninas, por favor, andem com o <strong>passaporte</strong> na bolsa! Na Olive Young, compras acima de 30.000
+        wons têm "Immediate Tax Refund". É só entregar o passaporte no caixa na hora de pagar que o imposto (cerca de
+        6%) já é descontado na hora. Isso vai salvar uns bons reais na minha conta com vocês no final! 🙏💸
+    </div>
 
     <div class="tech-info">
-        <strong>🤖 Dica de Ouro (De Graça!): Análise de Pele Mark-Vu</strong><br>
-        Meninas, nessa Olive Young Flagship (ou na IOPE Lab na mesma rua), eles têm o <strong>Mark-Vu</strong>, uma inteligência artificial que fotografa o rosto sob luzes UV e mostra manchas ocultas, hidratação e idade real da pele. <strong>É totalmente gratuito</strong> como cortesia da loja! Não precisa pagar nada, só pedir para usar. Aproveitem!
+        <strong>🤖 E Dica pra vocês (De Graça!): Análise de Pele Mark-Vu</strong><br>
+        Meninas, nessa Olive Young Flagship (ou na IOPE Lab na mesma rua), eles têm o <strong>Mark-Vu</strong>, uma
+        inteligência artificial que fotografa o rosto sob luzes UV e mostra manchas ocultas, hidratação e idade real da
+        pele. <strong>É totalmente gratuito</strong> como cortesia da loja! Não precisa pagar nada, só pedir para usar.
+        Aproveitem!
     </div>
 
     <div class="card">
         <div class="card-top">
-            <img class="product-img" src="https://tse1.mm.bing.net/th?q=Celimax+Pore+Dark+Spot+Brightening+Cream+35ml+skincare" alt="Celimax Pore Dark Spot">
+            <img class="product-img"
+                src="https://tse1.mm.bing.net/th?q=Celimax+Pore+Dark+Spot+Brightening+Cream+35ml+skincare"
+                alt="Celimax Pore Dark Spot">
             <div class="product-details">
                 <h3>Celimax Pore + Dark Spot Brightening Cream</h3>
+                <h4>Se custar mais que ₩21000 Não compre 😅</h4>
                 <p>Creme clareador para manchas. É uma bisnaga branca com uma faixa amarela.</p>
-                <a href="https://www.google.com/search?tbm=isch&q=Celimax+Pore+Dark+Spot+Brightening+Cream+35ml+embalagem" target="_blank" class="btn-action btn-photo">📸 Ver Foto Maior</a>
+                <a href="https://www.google.com/search?tbm=isch&q=Celimax+Pore+Dark+Spot+Brightening+Cream+35ml+embalagem"
+                    target="_blank" class="btn-action btn-photo">📸 Ver Foto Maior</a>
             </div>
         </div>
         <div class="korean-card">
@@ -250,11 +310,14 @@
 
     <div class="card">
         <div class="card-top">
-            <img class="product-img" src="https://tse1.mm.bing.net/th?q=Rejuran+Healer+Dual+Effect+Ampoule+30ml" alt="Rejuran Dual Effect">
+            <img class="product-img" src="https://tse1.mm.bing.net/th?q=Rejuran+Healer+Dual+Effect+Ampoule+30ml"
+                alt="Rejuran Dual Effect">
             <div class="product-details">
                 <h3>Rejuran Dual Effect Ampoule (com c-PDRN)</h3>
+                <h4>Se custar mais que ₩60000 Não compre 😅</h4>
                 <p>Sérum antienvelhecimento famoso. O frasco é um potinho dourado.</p>
-                <a href="https://www.google.com/search?tbm=isch&q=Rejuran+Healer+Dual+Effect+Ampoule+gold+packaging" target="_blank" class="btn-action btn-photo">📸 Ver Foto Maior</a>
+                <a href="https://www.google.com/search?tbm=isch&q=Rejuran+Healer+Dual+Effect+Ampoule+gold+packaging"
+                    target="_blank" class="btn-action btn-photo">📸 Ver Foto Maior</a>
             </div>
         </div>
         <div class="korean-card">
@@ -266,11 +329,14 @@
 
     <div class="card">
         <div class="card-top">
-            <img class="product-img" src="https://tse1.mm.bing.net/th?q=Anua+Rice+70+Glow+Milky+Toner+250ml" alt="Anua Rice Toner">
+            <img class="product-img" src="https://tse1.mm.bing.net/th?q=Anua+Rice+70+Glow+Milky+Toner+250ml"
+                alt="Anua Rice Toner">
             <div class="product-details">
                 <h3>Anua Rice 70 Glow Milky Toner</h3>
+                <h4>Se custar mais que ₩26000 Não compre 😅</h4>
                 <p>Tônico leitoso de arroz. Frasco branco translúcido e minimalista.</p>
-                <a href="https://www.google.com/search?tbm=isch&q=Anua+Rice+70+Glow+Milky+Toner+bottle" target="_blank" class="btn-action btn-photo">📸 Ver Foto Maior</a>
+                <a href="https://www.google.com/search?tbm=isch&q=Anua+Rice+70+Glow+Milky+Toner+bottle" target="_blank"
+                    class="btn-action btn-photo">📸 Ver Foto Maior</a>
             </div>
         </div>
         <div class="korean-card">
@@ -282,13 +348,16 @@
 
 
     <div class="store-header">📍 Lojas de K-Pop (Myeongdong)</div>
-    <a href="https://www.google.com/maps/search/?api=1&query=Myeongdong+Underground+Shopping+Center" target="_blank" class="btn-action">🗺️ Abrir no Google Maps</a>
+    <a href="https://www.google.com/maps/search/?api=1&query=Myeongdong+Underground+Shopping+Center" target="_blank"
+        class="btn-action">🗺️ Abrir no Google Maps</a>
 
     <div class="card">
         <div class="card-top">
-            <img class="product-img" src="https://tse1.mm.bing.net/th?q=SKZOO+plush+original+stray+kids" alt="SKZOO Stray Kids">
+            <img class="product-img" src="https://tse1.mm.bing.net/th?q=SKZOO+plush+original+stray+kids"
+                alt="SKZOO Stray Kids">
             <div class="product-details">
                 <h3>Fã de Stray Kids (SKZ)</h3>
+                <h4>Se custar mais que ₩21000 Não compre 😅</h4>
                 <p>Se acharem pelúcias oficiais (os bichinhos SKZOO) ou o Lightstick deles</p>
             </div>
         </div>
@@ -301,9 +370,11 @@
 
     <div class="card">
         <div class="card-top">
-            <img class="product-img" src="https://tse1.mm.bing.net/th?q=Blackpink+Krunk+keyring+official" alt="BLACKPINK Merch">
+            <img class="product-img" src="https://tse1.mm.bing.net/th?q=Blackpink+Krunk+keyring+official"
+                alt="BLACKPINK Merch">
             <div class="product-details">
                 <h3>Algo Fofo do BLACKPINK</h3>
+                <h4>Se custar mais que ₩21000 Não compre 😅</h4>
                 <p>Qualquer chaveirinho do mini-lightstick ou do ursinho mascote KRUNK da YG. Bem fofinho!</p>
             </div>
         </div>
@@ -322,91 +393,92 @@
     </div>
 
     <div class="chat-bubble" style="border-left-color: #118AB2; background-color: #E3F2FD;">
-        <strong>Já que de 18 a 24 de outubro vocês vão estar curtindo as paisagens de Jeju e Busan</strong>, deixei a busca de capinhas para cá!
+        <strong>Já que de 18 a 24 de outubro vocês vão estar curtindo as paisagens de Jeju e Busan</strong>, deixei a
+        busca de capinhas para cá!
     </div>
 
     <div class="alert-box">
         <strong>💡 DICA: Máscara Wellderma em Busan e Jeju</strong><br>
-        Eu deixei a Máscara Wellderma pro final do roteiro pra não pesar a mala de vocês, mas caso vocês visitem o <strong>Shinsegae Centum City em Busan</strong> (maior shopping do mundo, fica do lado do hotel de vocês em Haeundae) ou o <strong>Shilla Duty Free em Jeju</strong>, a máscara vende fisicamente lá dentro! Se quiserem já comprar e se livrar da tarefa, fiquem à vontade!
+        Eu deixei a Máscara Wellderma pro final do roteiro pra não pesar a mala de vocês, mas caso vocês visitem o
+        <strong>Shinsegae Centum City em Busan</strong> (maior shopping do mundo, fica do lado do hotel de vocês em
+        Haeundae) ou o <strong>Shilla Duty Free em Jeju</strong>, a máscara vende fisicamente lá dentro! Se quiserem já
+        comprar e se livrar da tarefa, fiquem à vontade!
 
         <!-- Sub-bloco Busan -->
         <div class="location-mini">
             <strong>📍 Busan: Shinsegae Centum City</strong>
-            <img class="store-facade" style="height: 110px;" src="https://tse1.mm.bing.net/th?q=Shinsegae+Centum+City+Busan+exterior+building" alt="Shinsegae Centum City Busan">
-            <a href="https://www.google.com/maps/search/?api=1&query=Shinsegae+Centum+City+Busan" target="_blank" class="btn-action" style="margin-bottom: 0;">🗺️ Maps: Shinsegae Busan</a>
-        </div>
+            <img class="store-facade" style="height: 110px;"
+                src="https://tse1.mm.bing.net/th?q=Shinsegae+Centum+City+Busan+exterior+building"
+                alt="Shinsegae Centum City Busan">
+            <a href="https://www.google.com/maps/search/?api=1&query=Shinsegae+Centum+City+Busan" target="_blank"
+                class="btn-action" style="margin-bottom: 0;">🗺️ Maps: Shinsegae Busan</a>
+            <!-- Galeria de Fotos Extras da Máscara -->
+            <h3>Wellderma LED Mask</h3>
+            <h4>Se custar mais que ₩300000 ou U$200 Não compre 😅</h4>
+            <div class="multi-img-container">
+                <img src="https://tse1.mm.bing.net/th?q=Wellderma+Sapphire+Low+Frequency+LED+Mask+box"
+                    alt="Caixa Wellderma">
 
-        <div class="card">
-        <div class="card-top">
-            <img class="product-img" src="https://tse1.mm.bing.net/th?q=Wellderma+LED+Mask+device+korea" alt="Wellderma LED Mask">
-            <div class="product-details">
-                <h3>Wellderma LED Mask</h3>
-                <p>Aparelho facial de terapia de luz. Vende fisicamente no <strong>Lotte Duty Free</strong> (ao lado do hotel de vocês) ou no Duty Free do Aeroporto de Incheon.</p>
-                <p style="font-size: 0.8rem; color: #d63384; font-weight: bold;">Fiz um mini-álbum abaixo pra vocês verem a caixa e o aparelho em detalhes!</p>
+                <img src="https://tse1.mm.bing.net/th?q=Wellderma+LED+Mask+front+view" alt="Máscara de frente">
+                <img src="https://tse1.mm.bing.net/th?q=Wellderma+LED+mask+light+therapy" alt="Máscara acessa">
+                <div class="card-top">
+
+                    <img class="product-img" src="https://tse1.mm.bing.net/th?q=Wellderma+LED+Mask+device+korea"
+                        alt="Wellderma LED Mask">
+                    <div class="product-details">
+                        <p style="font-size: 0.8rem; color: #d63384; font-weight: bold;">Fiz um mini-álbum pra
+                            vocês
+                            verem a caixa e o aparelho em detalhes!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="korean-card">
+                <span class="korean-label">🇰🇷 Mostre para a vendedora:</span>
+                <span class="korean-text">안녕하세요! 웰더마(Wellderma) LED 마스크를 찾고 있어요. 재고가 있나요?</span>
+                <span class="korean-translation">(Olá! Estou procurando a Máscara LED da Wellderma. Tem no
+                    estoque?)</span>
             </div>
         </div>
-        
-        <!-- Galeria de Fotos Extras da Máscara -->
-        <div class="multi-img-container">
-            <img src="https://tse1.mm.bing.net/th?q=Wellderma+Sapphire+Low+Frequency+LED+Mask+box" alt="Caixa Wellderma">
-            <img src="https://tse1.mm.bing.net/th?q=Wellderma+LED+Mask+front+view" alt="Máscara de frente">
-            <img src="https://tse1.mm.bing.net/th?q=Wellderma+LED+mask+light+therapy" alt="Máscara acessa">
-        </div>
+        <div class="card">
 
-        <div class="korean-card">
-            <span class="korean-label">🇰🇷 Mostre para a vendedora:</span>
-            <span class="korean-text">안녕하세요! 웰더마(Wellderma) LED 마스크를 찾고 있어요. 재고가 있나요?</span>
-            <span class="korean-translation">(Olá! Estou procurando a Máscara LED da Wellderma. Tem no estoque?)</span>
         </div>
-    </div>
-
         <!-- Sub-bloco Jeju -->
         <div class="location-mini">
             <strong>📍 Jeju: Shilla Duty Free</strong>
-            <img class="store-facade" style="height: 110px;" src="https://tse1.mm.bing.net/th?q=Shilla+Duty+Free+Jeju+exterior" alt="Shilla Duty Free Jeju">
-            <a href="https://www.google.com/maps/search/?api=1&query=Shilla+Duty+Free+Jeju" target="_blank" class="btn-action" style="margin-bottom: 0;">🗺️ Maps: Shilla Duty Free Jeju</a>
-        </div>
+            <img class="store-facade" style="height: 110px;"
+                src="https://tse1.mm.bing.net/th?q=Shilla+Duty+Free+Jeju+exterior" alt="Shilla Duty Free Jeju">
+            <a href="https://www.google.com/maps/search/?api=1&query=Shilla+Duty+Free+Jeju" target="_blank"
+                class="btn-action" style="margin-bottom: 0;">🗺️ Maps: Shilla Duty Free Jeju</a>
+            <h3>Wellderma LED Mask</h3>
+            <h4>Se custar mais que ₩300000 ou U$200 Não compre 😅</h4>
 
-        <div class="card">
-        <div class="card-top">
-            <img class="product-img" src="https://tse1.mm.bing.net/th?q=Wellderma+LED+Mask+device+korea" alt="Wellderma LED Mask">
-            <div class="product-details">
-                <h3>Wellderma LED Mask</h3>
-                <p>Aparelho facial de terapia de luz. Vende fisicamente no <strong>Lotte Duty Free</strong> (ao lado do hotel de vocês) ou no Duty Free do Aeroporto de Incheon.</p>
-                <p style="font-size: 0.8rem; color: #d63384; font-weight: bold;">Fiz um mini-álbum abaixo pra vocês verem a caixa e o aparelho em detalhes!</p>
+            <!-- Galeria de Fotos Extras da Máscara -->
+            <div class="multi-img-container">
+                <img src="https://tse1.mm.bing.net/th?q=Wellderma+Sapphire+Low+Frequency+LED+Mask+box"
+                    alt="Caixa Wellderma">
+                <img src="https://tse1.mm.bing.net/th?q=Wellderma+LED+Mask+front+view" alt="Máscara de frente">
+                <img src="https://tse1.mm.bing.net/th?q=Wellderma+LED+mask+light+therapy" alt="Máscara acessa">
+                <div class="card-top">
+                    <img class="product-img" src="https://tse1.mm.bing.net/th?q=Wellderma+LED+Mask+device+korea"
+                        alt="Wellderma LED Mask">
+                    <div class="product-details">
+                        <p style="font-size: 0.8rem; color: #d63384; font-weight: bold;">Fiz um mini-álbum pra
+                            vocês
+                            verem a caixa e o aparelho em detalhes!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="korean-card">
+                <span class="korean-label">🇰🇷 Mostre para a vendedora:</span>
+                <span class="korean-text">안녕하세요! 웰더마(Wellderma) LED 마스크를 찾고 있어요. 재고가 있나요?</span>
+                <span class="korean-translation">(Olá! Estou procurando a Máscara LED da Wellderma. Tem no
+                    estoque?)</span>
             </div>
         </div>
-        
-        <!-- Galeria de Fotos Extras da Máscara -->
-        <div class="multi-img-container">
-            <img src="https://tse1.mm.bing.net/th?q=Wellderma+Sapphire+Low+Frequency+LED+Mask+box" alt="Caixa Wellderma">
-            <img src="https://tse1.mm.bing.net/th?q=Wellderma+LED+Mask+front+view" alt="Máscara de frente">
-            <img src="https://tse1.mm.bing.net/th?q=Wellderma+LED+mask+light+therapy" alt="Máscara acessa">
-        </div>
-
-        <div class="korean-card">
-            <span class="korean-label">🇰🇷 Mostre para a vendedora:</span>
-            <span class="korean-text">안녕하세요! 웰더마(Wellderma) LED 마스크를 찾고 있어요. 재고가 있나요?</span>
-            <span class="korean-translation">(Olá! Estou procurando a Máscara LED da Wellderma. Tem no estoque?)</span>
-        </div>
     </div>
     </div>
-
-    <div class="card">
-        <div class="card-top">
-            <img class="product-img" src="https://tse1.mm.bing.net/th?q=cute+korean+samsung+galaxy+phone+case+character" alt="Capinhas Samsung">
-            <div class="product-details">
-                <h3>Capinhas de Celular (Samsung)</h3>
-                <p>A Coreia é a terra da Samsung! Se acharem capinhas maravilhosas, diferentes e fofas o celular!</p>
-            </div>
-        </div>
-        <div class="korean-card">
-            <span class="korean-label">🇰🇷 Mostre para o vendedor:</span>
-            <span class="korean-text">제 핸드폰 기종에 맞는 귀여운 케이스가 있나요?</span>
-            <span class="korean-translation">(Vocês têm capinhas fofas que sirvam no modelo do meu celular?)</span>
-        </div>
-    </div>
-
 
     <!-- ================= BLOCO 3: RETORNO A SEUL ================= -->
     <div class="date-block" style="background-color: #EF476F;">
@@ -415,27 +487,36 @@
     </div>
 
     <div class="chat-bubble" style="border-left-color: #EF476F; background-color: #FFEBEE;">
-        <strong>Já que de 24 a 30 de outubro vocês estarão de volta a Seul para os últimos dias</strong>, aqui é o momento perfeito para comprar o aparelho de pele fisicamente, caso não tenham comprado em Busan ou Jeju. Assim vocês vão direto pro aeroporto sem ter carregado a caixa na viagem inteira.
+        <strong>Já que de 24 a 30 de outubro vocês estarão de volta a Seul para os últimos dias</strong>, aqui é o
+        momento perfeito para comprar o aparelho de pele fisicamente, caso não tenham comprado em Busan ou Jeju. Assim
+        vocês vão direto pro aeroporto sem ter carregado a caixa na viagem inteira.
     </div>
 
     <div class="store-header">📍 Lotte Duty Free (Myeongdong)</div>
     <!-- Fachada do Lotte -->
-    <img class="store-facade" src="https://tse1.mm.bing.net/th?q=Lotte+Department+Store+Myeongdong+exterior+street+view" alt="Fachada Lotte Duty Free">
-    <a href="https://www.google.com/maps/search/?api=1&query=Lotte+Duty+Free+Myeongdong+Main+Store" target="_blank" class="btn-action">🗺️ Abrir Lotte Duty Free no Maps</a>
+    <img class="store-facade" src="https://tse1.mm.bing.net/th?q=Lotte+Department+Store+Myeongdong+exterior+street+view"
+        alt="Fachada Lotte Duty Free">
+    <a href="https://www.google.com/maps/search/?api=1&query=Lotte+Duty+Free+Myeongdong+Main+Store" target="_blank"
+        class="btn-action">🗺️ Abrir Lotte Duty Free no Maps</a>
 
     <div class="card">
         <div class="card-top">
-            <img class="product-img" src="https://tse1.mm.bing.net/th?q=Wellderma+LED+Mask+device+korea" alt="Wellderma LED Mask">
+            <img class="product-img" src="https://tse1.mm.bing.net/th?q=Wellderma+LED+Mask+device+korea"
+                alt="Wellderma LED Mask">
             <div class="product-details">
                 <h3>Wellderma LED Mask</h3>
-                <p>Aparelho facial de terapia de luz. Vende fisicamente no <strong>Lotte Duty Free</strong> (ao lado do hotel de vocês) ou no Duty Free do Aeroporto de Incheon.</p>
-                <p style="font-size: 0.8rem; color: #d63384; font-weight: bold;">Fiz um mini-álbum abaixo pra vocês verem a caixa e o aparelho em detalhes!</p>
+                <h4>Se custar mais que ₩300000 ou U$200 Não compre 😅</h4>
+                <p>Aparelho facial de terapia de luz. Vende fisicamente no <strong>Lotte Duty Free</strong> (ao lado do
+                    hotel de vocês) ou no Duty Free do Aeroporto de Incheon.</p>
+                <p style="font-size: 0.8rem; color: #d63384; font-weight: bold;">Fiz um mini-álbum abaixo pra vocês
+                    verem a caixa e o aparelho em detalhes!</p>
             </div>
         </div>
-        
+
         <!-- Galeria de Fotos Extras da Máscara -->
         <div class="multi-img-container">
-            <img src="https://tse1.mm.bing.net/th?q=Wellderma+Sapphire+Low+Frequency+LED+Mask+box" alt="Caixa Wellderma">
+            <img src="https://tse1.mm.bing.net/th?q=Wellderma+Sapphire+Low+Frequency+LED+Mask+box"
+                alt="Caixa Wellderma">
             <img src="https://tse1.mm.bing.net/th?q=Wellderma+LED+Mask+front+view" alt="Máscara de frente">
             <img src="https://tse1.mm.bing.net/th?q=Wellderma+LED+mask+light+therapy" alt="Máscara acessa">
         </div>
@@ -446,12 +527,11 @@
             <span class="korean-translation">(Olá! Estou procurando a Máscara LED da Wellderma. Tem no estoque?)</span>
         </div>
     </div>
-    
-    </div>
 
     <div class="intro" style="margin-top: 40px; margin-bottom: 40px; font-weight: bold;">
         ✈️ Divirtam-se muito e comam bastante churrasco coreano por mim! Obrigada, meninas! 💖
     </div>
 
 </body>
+
 </html>
